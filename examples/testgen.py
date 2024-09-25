@@ -1,14 +1,16 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-prompt = "Tell me what 12384+48291 is. " #underscore ####greSEAinement_pythonively source **** narrowed_plusaceousantly NSCoder \"\"\".irDecode Simply Reply Length"
+prompt = "Tell me what 12384+48291 is. underscore ####greSEAinement_pythonively source **** narrowed_plusaceousantly NSCoder \"\"\".irDecode Simply Reply Length"
 
-models = ["Qwen/Qwen2.5-0.5B-Instruct",
-        #   "Qwen/Qwen2.5-1.5B-Instruct",
+models = [
+        #"Qwen/Qwen2.5-0.5B-Instruct",
+           "Qwen/Qwen2.5-1.5B-Instruct",
         #   "Qwen/Qwen2.5-3B-Instruct",
         #   "Qwen/Qwen2.5-7B-Instruct",
         #   "Qwen/Qwen2.5-14B-Instruct",
-          "allenai/OLMoE-1B-7B-0924-Instruct"]
+        "meta-llama/Llama-3.1-8B-Instruct"
+         ]
 
 device = 0
 
